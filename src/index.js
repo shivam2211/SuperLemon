@@ -16,25 +16,6 @@ function SuperLemon(props) {
   return (
     <div className="nonsense">
       <Greeting name={props.name} />
-      <Message />
-      <div>
-        <NumSign number={number} capture="number" />
-        <NumSign number={squaredNum} capture="squared" />
-      </div>
-      <Button
-        className="button"
-        raised={true}
-        onClick={() => setNumber(number - 1)}
-      >
-        -
-      </Button>
-      <Button
-        className="button"
-        raised={true}
-        onClick={() => setNumber(number + 1)}
-      >
-        +
-      </Button>
     </div>
   );
 }
